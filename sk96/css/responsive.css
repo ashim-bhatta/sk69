@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1000px) {
+    header {
+        height: auto;
+    }
+    nav {
+        height: 15vh;
+        transition: all 200ms;
+    }
+    nav .logo {
+        top: 50px;
+    }
+    .header-content {
+        grid-template-areas: "i i i i i i";
+    }
+    .empty {
+        display: none;
+    }
+    .ham-menu {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        margin-top: 3px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50vh;
+        left: 50vh;
+        transform: translate(-50px, -50px);
+    }
+    .menu li {
+        margin: 20px;
+    }
+    .menu li a {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}

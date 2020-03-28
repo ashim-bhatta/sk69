@@ -3,32 +3,50 @@
 
 <head>
     <title>S&lt;69 </title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body id="body">
-
     <header>
-        <nav>
+        <nav id="nav">
+            <div class="ham-menu" id="ham-menu" onclick="hamMenuToogle()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="logo" onmouseover="cursorHover()" onmouseout="normalCursor()">
+                <img src="./img/Logo_SK.svg" alt="">
+            </div>
             <ul class="menu">
-                <li onmouseover="cursorHover()" onmouseout="normalCursor()" class="menu-list">
-                    <a onmouseover="cursorHover()" onmouseout="normalCursor()" class="menu-list-link" href="#">
+                <li class="menu-list" onmouseover="cursorHover()" onmouseout="normalCursor()">
+                    <a href="" class="menu-list-link">
                         project
                     </a>
                 </li>
-                <li onmouseover="cursorHover()" onmouseout="normalCursor()" class="menu-list">
-                    <a onmouseover="cursorHover()" onmouseout="normalCursor()" class="menu-list-link" href="#">
+                <li class="menu-list" onmouseover="cursorHover()" onmouseout="normalCursor()">
+                    <a href="" class="menu-list-link">
                         contact
                     </a>
                 </li>
             </ul>
         </nav>
+        <div class="header-content">
+            <div class="empty"></div>
+            <div class="img">
+                <img src="./img/header-bg.png" alt="">
+            </div>
+        </div>
+
     </header>
+
+
 
 
     <div id="cursor"></div>
     <div id="outerCursor"></div>
+
 
     <script src="./js/main.js"></script>
 
