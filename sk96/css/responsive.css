@@ -7,7 +7,9 @@
         transition: all 200ms;
     }
     nav .logo {
-        top: 50px;
+        margin: 0;
+        margin: 30px 0 0 30px;
+        width: 90px;
     }
     .header-content {
         grid-template-areas: "i i i i i i";
@@ -17,33 +19,76 @@
     }
     .ham-menu {
         position: absolute;
-        top: 50px;
-        right: 50px;
+        top: 30px;
+        right: 30px;
     }
     .line {
-        width: 25px;
-        height: 2px;
+        width: 30px;
+        height: 3px;
         background: white;
-        margin-top: 3px;
+        margin-top: 5px;
     }
     .menu {
         display: none;
     }
-    .menu {
+    .mobile-menu {
+        width: 100vw;
+        height: 0vh;
+        background-color: rgba(255, 94, 0, 0.562);
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 50vh;
-        left: 50vh;
-        transform: translate(-50px, -50px);
+        text-align: center;
+        justify-content: center;
+        color: black;
+        position: fixed;
+        z-index: 56;
+        top: 0;
+        transition: height 200ms;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
     }
-    .menu li {
+    .mobile-menu li {
         margin: 20px;
     }
-    .menu li a {
+    .mobile-menu li a {
         font-size: 22px;
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
+        color: rgb(252, 252, 252);
+        position: relative;
+    }
+    .mobile-menu li a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        height: 1px;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        transform: scaleX(0);
+        transition: 200ms;
+        box-shadow: 2px 0px 20px black;
+    }
+    .mobile-menu li:hover a::after {
+        transform: scaleX(1);
+    }
+    .intro {
+        padding: 30px;
+    }
+    .intro .role {
+        font-size: 12px;
+        margin-right: 00px;
+    }
+    .intro-para {
+        clear: both;
+        line-height: 40px;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: justify;
     }
 }

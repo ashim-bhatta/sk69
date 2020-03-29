@@ -2,7 +2,7 @@ const outerCursor = document.getElementById('outerCursor')
 const cursor = document.getElementById('cursor')
 const hamMenu = document.getElementById('ham-menu')
 const nav = document.getElementById('nav')
-const menu = document.getElementById('menu')
+const mobileMenu = document.getElementById('mobile-menu')
 
 
 /*****getting height of outer div */
@@ -59,13 +59,12 @@ const normalCursor = (x, y) => {
 var isMenuOpen = false;
 hamMenuToogle = () => {
     if (isMenuOpen === true) {
-        nav.style.height = '100vh'
-        nav.style.backgroundColor = 'rgba(255, 94, 0, 0.486)'
+        mobileMenu.style.height = '0'
         isMenuOpen = false
     } else {
-        nav.style.height = '15vh'
+        mobileMenu.style.height = '100vh'
+
         isMenuOpen = true
-        nav.style.backgroundColor = '#0F0E0D'
 
     }
 
