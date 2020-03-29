@@ -12,6 +12,7 @@
         width: 90px;
     }
     .header-content {
+        padding: 30px;
         grid-template-areas: "i i i i i i";
     }
     .empty {
@@ -34,7 +35,7 @@
     .mobile-menu {
         width: 100vw;
         height: 0vh;
-        background-color: rgba(255, 94, 0, 0.562);
+        background-color: rgba(255, 94, 0, 0.829);
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -86,9 +87,9 @@
     }
     .intro-para {
         clear: both;
-        line-height: 40px;
+        line-height: 30px;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 18px;
         text-align: justify;
     }
 }
